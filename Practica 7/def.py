@@ -1,5 +1,5 @@
-input("Escriba la base del rectangulo: ")
-input("Escriba la altura del rectangulo: ")
+("la base del rectangulo es: 10")
+("la altura del rectangulo es: 5 ")
 
 def multiplicar(base,altura):
     return base*altura
