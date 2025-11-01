@@ -13,7 +13,6 @@ while True:
         "3.Eliminar, " \
         "4.Ver (cursos, lista de alumnos), " \
         "5.Salir "))
-
     match op1:
         case 1:
             op2 = int(input("Que desea agregar? " \
@@ -31,7 +30,6 @@ while True:
                     clave = nuevo_curso["aula"]
                     cursos[clave] = nuevo_curso
                     print("Curso agregado")
-
             elif op2 == 2:
                 nuevo_alumno = agregar_alumno()
                 clave = nuevo_alumno["id"]
@@ -45,12 +43,14 @@ while True:
                 "3.Nombre del curso, " \
                 "4.Datos del alumno "))
             if op3 == 1:
+                print(cursos["aula"])
                 indice = int(input("Ingrese el número de aula del curso a modificar: "))
                 if indice in cursos:
                     nuevo_instructor = input("Ingrese el nuevo nombre del instructor: ")
                     cursos[indice]["Instructor"]["nombre"] = nuevo_instructor
                     print("Instructor modificado")
             elif op3 == 2:
+                print(cursos["aula"])
                 indice = int(input("Ingrese el número de aula del curso a modificar: "))
                 if indice in cursos:
                     nueva_aula = int(input("Ingrese el nuevo número de aula: "))
@@ -58,6 +58,7 @@ while True:
                     cursos[nueva_aula]["aula"] = nueva_aula
                     print("Aula modificada")
             elif op3 == 3:
+                print(cursos["aula"])
                 indice = int(input("Ingrese el número de aula del curso a modificar: "))
                 if indice in cursos:
                     nuevo_nombre = input("Ingrese el nuevo nombre del curso: ")
@@ -75,11 +76,13 @@ while True:
                 "1. curso, " \
                 "2. alumno "))
             if op4 == 1:
+                print(cursos["aula"])
                 indice = int(input("Ingrese el número de aula del curso a eliminar: "))
                 if indice in cursos:
                     curso_eliminado = cursos.pop(indice)
                     print("Curso eliminado")
             elif op4 == 2:
+                print(alumnos["id"])
                 id_alumno = int(input("Ingrese el ID del alumno a eliminar: "))
                 if id_alumno in alumnos:
                     alumno_eliminado = alumnos.pop(id_alumno)
@@ -93,6 +96,7 @@ while True:
 
                     print(cursos)
             elif op5 == 2:
+                print(cursos["aula"])
                 indice = int(input("Ingrese el número de aula del curso para ver sus alumnos: "))
                 if indice in cursos:
                     print("Alumnos del curso:")
