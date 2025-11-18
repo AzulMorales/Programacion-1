@@ -104,7 +104,7 @@ def jugar():
 
         intento_actual= obtener_intento_usuario()
 
-        pc,cc =evaluar_intento(intento_actual,codigo_secreto,)
+        pc,cc =evaluar_intento(intento_actual,codigo_secreto)
         intentos_pasados.append(intento_actual)
         pistas_pasadas.append((pc,cc))
 
