@@ -65,4 +65,4 @@ for row in range(5):
         acumulador+=1
         
 
-root.mainloop() #Escuchadpr de eventos de tkinter
+root.mainloop() #Escuchador de eventos de tkinter
