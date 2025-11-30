@@ -1,5 +1,5 @@
 import tkinter as tk
-from tkinter import font, filedialog
+from tkinter import font, filedialog, messagebox
 from config import TITULO, COLOR_BARRA_SUPERIOR, COLOR_PANEL_PRINCIPAL, COLOR_MENU_LATERAL
 from util.util_ventana import centrar_ventana 
 from util.util_imagenes import leer_imagen
